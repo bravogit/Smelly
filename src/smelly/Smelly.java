@@ -23,19 +23,9 @@ public class Smelly {
         d.setRaggio(5.0f);
         d.setAltezza(2.0f);
         Sfera e = new Sfera();
-        e.setRaggio(5.3f);
-        // Da finire
-        /*Cilindro Birillo[] = new Cilindro[10];
-        Birillo[1] = c;
-        Birillo[2] = d;
-        Birillo[3] = e;
-        //Collections.max(Birillo);
-        if (Birillo[1].getVolume() >= Birillo[2].getVolume() && Birillo[1].getVolume() >= Birillo[3].getVolume()) {
-            System.out.println("Il solido con volume maggiore è al posto 1");
-        } else if (Birillo[2].getVolume() >= Birillo[1].getVolume() && Birillo[2].getVolume() >= Birillo[3].getVolume()) {
-            System.out.println("Il solido con volume maggiore è al posto 2");
-        } else if (Birillo[3].getVolume() >= Birillo[1].getVolume() && Birillo[3].getVolume() >= Birillo[2].getVolume()) {
-            System.out.println("Il solido con volume maggiore è al posto 3");
-        }*/
+        e.setRaggio(5.3f);ArrayList<FiguraSolida> Birillo = new ArrayList<>();
+        Birillo.add(c);
+        Birillo.add(d);
+        System.out.println("Il solido con volume maggiore è al posto " + (Birillo.indexOf(Collections.max((ArrayList) Birillo)) + 1));
     }
 }

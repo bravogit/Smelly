@@ -31,13 +31,7 @@ public class Sfera implements FiguraSolida, Comparable {
     }
 
     @Override
-    public int compareTo(Object t) {
-        try {
-            return (int) (((FiguraSolida) (t)).getVolume() - getVolume());
-        } catch (Exception e) {
-            throw new UnsupportedOperationException("Not supported yet.");
-        } finally {
-            return 0;
-        }
+    public int compareTo(Object o) {
+        return (int) (getVolume() - ((FiguraSolida) (o)).getVolume());
     }
 }

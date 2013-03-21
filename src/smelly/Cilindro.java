@@ -31,22 +31,16 @@ public class Cilindro implements FiguraSolida, Comparable {
 
     @Override
     public float getArea() {
-        return (float) ((2 * raggio * Math.PI*altezza) + 2*(raggio*raggio*Math.PI));
+        return (float) ((2 * raggio * Math.PI * altezza) + 2 * (raggio * raggio * Math.PI));
     }
 
     @Override
     public float getVolume() {
-        return (float) ((raggio*raggio*Math.PI)*altezza);
+        return (float) ((raggio * raggio * Math.PI) * altezza);
     }
 
     @Override
-    public int compareTo(Object t) {
-        try {
-            return (int) (((FiguraSolida) (t)).getVolume() - getVolume());
-        } catch (Exception e) {
-            throw new UnsupportedOperationException("Not supported yet.");
-        } finally {
-            return 0;
-        }
+    public int compareTo(Object o) {
+        return (int) (getVolume() - ((FiguraSolida) (o)).getVolume());
     }
 }
