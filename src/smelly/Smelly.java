@@ -27,6 +27,7 @@ public class Smelly {
         ArrayList<FiguraSolida> Birillo = new ArrayList<>();
         Birillo.add(c);
         Birillo.add(d);
+        Birillo.add(e);
         System.out.println("Il solido con volume maggiore è al posto " + (Birillo.indexOf(Collections.max((ArrayList) Birillo)) + 1));
     }
 }
