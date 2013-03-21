@@ -13,14 +13,10 @@ import static org.junit.Assert.*;
  */
 public class SmellyTest {
     
-    public SmellyTest() {
-    }
-
     /**
      * Test of main method, of class Smelly.
      */
     public void testMain() {
         System.out.println("main");
-        assertEquals(2,2);
     }
 }
