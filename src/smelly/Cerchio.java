@@ -10,8 +10,18 @@ package smelly;
  */
 public class Cerchio implements FiguraPiana {
 
+    private float raggio;
+
+    public float getRaggio() {
+        return raggio;
+    }
+
+    public void setRaggio(float raggio) {
+        this.raggio = raggio;
+    }
+    
     @Override
     public float getArea() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return (float) (Math.PI*raggio*raggio);
     }
 }
