@@ -4,7 +4,7 @@ package smelly;
  *
  * @author piffy
  */
-class Solido {
+class Solid {
         final float pi=(float)Math.PI;
     
         int type; //0=Cerchio, 1=cilindro, 2=sfera
@@ -13,7 +13,7 @@ class Solido {
         float A;
         float V;
 
-    public Solido() {
+    public Solid() {
 
     }
 

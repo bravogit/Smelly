@@ -10,23 +10,23 @@ package smelly;
  */
 public class Smelly {
     public static void main(String[] args) {
-        Solido c = new Solido();
+        Solid c = new Solid();
         c.H=2.0f;
         c.r=7.f;
         c.type=1;
         c.calcola();
         System.out.println("Area di superficie:"+c.A);
         System.out.println("Volume: "+c.V);
-        Solido d = new Solido();
+        Solid d = new Solid();
         d.r=5.0f;
         d.H=2.0f;
         d.type=1;
         d.calcola();
-        Solido e = new Solido();
+        Solid e = new Solid();
         e.r=5.3f;
         e.type=2;
         e.calcola();
-        Solido Birillo[] = new Solido[10];
+        Solid Birillo[] = new Solid[10];
         Birillo[1]=c;Birillo[2]=d;Birillo[3]=e;
         if (Birillo[1].V>=Birillo[2].V && Birillo[1].V>=Birillo[3].V) 
             System.out.println("Il solido con volume maggiore è al posto 1");
