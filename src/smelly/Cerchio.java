@@ -19,9 +19,9 @@ public class Cerchio implements FiguraPiana {
     public void setRaggio(float raggio) {
         this.raggio = raggio;
     }
-    
+
     @Override
     public float getArea() {
-        return (float) (Math.PI*raggio*raggio);
+        return (float) (Math.PI * raggio * raggio);
     }
 }
