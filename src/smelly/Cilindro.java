@@ -8,7 +8,7 @@ package smelly;
  *
  * @author Eddy
  */
-public class Cilindro implements FiguraSolida {
+public class Cilindro implements FiguraSolida, Comparable {
 
     private float altezza;
     private float raggio;
@@ -38,5 +38,15 @@ public class Cilindro implements FiguraSolida {
     public float getVolume() {
         return (float) ((raggio*raggio*Math.PI)*altezza);
     }
-    
+
+    @Override
+    public int compareTo(Object t) {
+        try {
+            return (int) (((FiguraSolida) (t)).getVolume() - getVolume());
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Not supported yet.");
+        } finally {
+            return 0;
+        }
+    }
 }
