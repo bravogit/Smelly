@@ -9,7 +9,8 @@ import java.util.Collections;
  * indicando che "puzza" avete rilevato e che metodo avete scelto per
  * risolverlo) 3) Aggiungere gli opportuni Javadoc se non banali
  *
- * @author piffy
+ * @author bravo
+ * 
  */
 public class Smelly {
 
