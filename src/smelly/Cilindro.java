@@ -10,8 +10,16 @@ package smelly;
  */
 public class Cilindro implements FiguraSolida, Comparable {
 
-    private float altezza;
     private float raggio;
+    private float altezza;
+
+    public Cilindro() {
+    }
+    
+    public Cilindro(float raggio, float altezza) {
+        this.raggio = raggio;
+        this.altezza = altezza;
+    }
 
     public float getAltezza() {
         return altezza;

@@ -12,6 +12,13 @@ public class Sfera implements FiguraSolida, Comparable {
 
     private float raggio;
 
+    public Sfera() {
+    }
+    
+    public Sfera(float raggio) {
+        this.raggio = raggio;
+    }
+
     public float getRaggio() {
         return raggio;
     }

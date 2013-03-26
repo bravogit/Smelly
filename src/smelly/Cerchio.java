@@ -12,6 +12,13 @@ public class Cerchio implements FiguraPiana {
 
     private float raggio;
 
+    public Cerchio() {
+    }
+
+    public Cerchio(float raggio) {
+        this.raggio = raggio;
+    }
+
     public float getRaggio() {
         return raggio;
     }
